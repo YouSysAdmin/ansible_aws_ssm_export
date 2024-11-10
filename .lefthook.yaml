@@ -1,0 +1,13 @@
+---
+pre-commit:
+  parallel: true
+  scripts:
+    "license-checker.sh":
+      runner: bash
+  commands:
+    ansible-lint:
+      glob: "*.{yaml,yml}"
+      run: ansible-lint -q {staged_files}
+    typos:
+      glob: "*.{yaml,yml,md,sh}"
+      run: typos --write-changes {staged_files}

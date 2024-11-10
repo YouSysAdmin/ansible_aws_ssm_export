@@ -1,0 +1,7 @@
+# SPDX-FileCopyrightText: Copyright Oleksii Samoliuk
+# SPDX-License-Identifier: MIT
+---
+- name: Collecting AWS SSM Parameters by prefix as Ansible Facts
+  ansible.builtin.include_tasks: ssm.yaml
+  loop: "{{ ssm_prefixes }}"
+  when: ssm_prefixes is defined

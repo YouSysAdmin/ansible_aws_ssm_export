@@ -1,0 +1,18 @@
+# SPDX-FileCopyrightText: Copyright Oleksii Samoliuk
+# SPDX-License-Identifier: MIT
+---
+collections: ["amazon.aws"]
+dependencies: []
+
+galaxy_info:
+  role_name: aws_ssm_export
+  author: yousysadmin
+  description: Collecting AWS SSM Parameters by prefix as Ansible Facts
+  company: ""
+  license: "license MIT"
+  min_ansible_version: "2.10"
+  platforms: []
+  galaxy_tags:
+    - aws
+    - ssm
+    - facts
